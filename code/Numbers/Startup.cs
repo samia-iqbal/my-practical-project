@@ -27,6 +27,9 @@ namespace Numbers
         public void ConfigureServices(IServiceCollection services)
         {
 
+
+            services.AddRouting(r => r.LowercaseUrls = true);
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
